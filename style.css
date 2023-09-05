@@ -1,0 +1,91 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+   background: #504099;
+}
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+}
+.container{
+    height:100vh;
+    width: 100%;
+    text-align: center;
+
+}
+.container h1{
+    font-size: 40px;
+}
+.container .mistake{
+    background: #974EC3;
+    padding: 10px;
+    width: 60vmin;
+    font-size: 24px;
+    margin: 20px auto;
+    color: black;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+#gameBoard{
+    height: 60vmin;
+    width: 60vmin;
+    background-color: #614BC3;
+    margin :0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tile{
+    height: calc(100% /9);
+    width:calc(100% /9);
+    border:1px solid black;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filled{
+    background: #4D2DB7;
+}
+.select-tile{
+    background: #4D2DB7;
+}
+#digits{
+    width: 60vmin;
+    display: flex;
+    margin: 20px auto;
+}
+#digits .tile{
+    background: #974EC3;
+    border-radius: 10px;
+    border: 1px solid #000;
+    color: black;
+    cursor: pointer;
+}
+.border-right{
+    border-right: 2px solid #000;
+}
+.border-bottom{
+    border-bottom: 2px solid #000;
+}
+#delete{
+    color: #f00;
+    font-size: 30px;
+    cursor: pointer;
+}
+.danger{
+    color: #f00;
+}
+@media (max-width:600px) {
+    .tile{
+        font-size: 18px;
+   }
+}
+@media (max-width:400px) {
+    .tile{
+        font-size: 16px;
+   }
+}
